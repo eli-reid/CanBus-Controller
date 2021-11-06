@@ -18,6 +18,7 @@
 #define YM 9   // can be a digital pin
 #define XP 8   // can be a digital pin
 #include <stdio.h>
+#include "mcp_can.h"
 #include <Elegoo_GFX.h>
 #include <Elegoo_TFTLCD.h>
 #include <TouchScreen.h>

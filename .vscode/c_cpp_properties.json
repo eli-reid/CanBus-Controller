@@ -2,29 +2,6 @@
     "version": 4,
     "configurations": [
         {
-            "name": "Win32",
-            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe",
-            "compilerArgs": [],
-            "intelliSenseMode": "windows-msvc-x64",
-            "includePath": [
-                "${workspaceFolder}/*",
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/UI/**",
-                "${workspaceFolder}/includes/**",
-                "${workspaceFolder}/includes/Elegoo_GFX/**",
-                "C:/Program Files (x86)/Arduino/libraries/**",
-                "${workspaceFolder}/includes/Elegoo_GFX"
-            ],
-            "forcedInclude": [],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ]
-        },
-        {
             "name": "Arduino",
             "compilerPath": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\bin\\avr-g++",
             "compilerArgs": [
@@ -39,6 +16,9 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
+                "${workspaceFolder}\\includes\\**",
+                "${workspaceFolder}\\includes\\CAN_MCP2515\\**",
+                "${workspaceFolder}\\UI\\**",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega",
                 "C:\\Users\\EliR\\OneDrive\\Documents\\Arduino\\libraries\\Elegoo_GFX",
@@ -46,7 +26,8 @@
                 "C:\\Users\\EliR\\OneDrive\\Documents\\Arduino\\libraries\\TouchScreen",
                 "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include",
                 "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed",
-                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\avr\\include"
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\avr\\include",
+                "${workspaceFolder}/includes"
             ],
             "forcedInclude": [
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
@@ -557,7 +538,11 @@
                 "__ATOMIC_RELEASE=3",
                 "__BUILTIN_AVR_FMUL=1",
                 "USBCON"
-            ]
+            ],
+            "mergeConfigurations": true,
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ]
 }
